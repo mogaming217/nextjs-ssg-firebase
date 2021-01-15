@@ -21,7 +21,7 @@ const _useAuth = (): AuthReturnType => {
     let cancel = false
 
     const unsubscribe = auth.onAuthStateChanged(
-      async (user) => {
+      async user => {
         if (cancel) return
         if (user) {
           setAuth({ loading: false, user: convertUser(user) })
@@ -41,7 +41,7 @@ const _useAuth = (): AuthReturnType => {
           setAuth({ loading: false, error: 'unexpected' })
         }
       },
-      (error) => {
+      error => {
         if (cancel) return
         console.error(error)
         // FIXME: 適切なエラーに変換

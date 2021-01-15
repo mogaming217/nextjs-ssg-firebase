@@ -1,9 +1,6 @@
-export function compactMap<T, R>(
-  array: T[],
-  handle: (data: T) => R | null | undefined
-) {
+export function compactMap<T, R>(array: T[], handle: (data: T) => R | null | undefined) {
   const list: R[] = []
-  array.forEach((data) => {
+  array.forEach(data => {
     const result = handle(data)
     if (result) {
       list.push(result)

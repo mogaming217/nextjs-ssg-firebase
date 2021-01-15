@@ -29,7 +29,7 @@ const HEIGHT = {
   HEADER: 44,
 } as const
 
-export default {
+export const StyleConst = {
   FONT,
   FONT_WEIGHT,
   COLOR,

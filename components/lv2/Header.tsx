@@ -1,12 +1,12 @@
 import React from 'react'
 import { FC } from 'react'
 import styled from 'styled-components'
-import Constants from 'styles/StyleConst'
 import Link from 'next/link'
 import { Const } from 'lib/const'
+import { StyleConst } from 'styles/const'
 
 const _Header = styled.header`
-  height: ${Constants.HEIGHT.HEADER}px;
+  height: ${StyleConst.HEIGHT.HEADER}px;
   width: 100%;
   z-index: 1000;
   position: absolute;
