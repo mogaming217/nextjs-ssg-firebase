@@ -1,7 +1,7 @@
-import React from 'react'
-import { NextPage } from 'next'
 import { publicEnv } from 'env'
+import { NextPage } from 'next'
 import Link from 'next/link'
+import React from 'react'
 
 const RootPage: NextPage = () => {
   return (

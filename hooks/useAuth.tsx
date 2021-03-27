@@ -1,7 +1,7 @@
-import React, { useState, useEffect, createContext, ReactNode, useContext } from 'react'
-import { auth } from 'lib/firebase/client'
 import firebase from 'firebase/app'
-import { User, Me } from 'model/user'
+import { auth } from 'lib/firebase/client'
+import { Me, User } from 'model/user'
+import React, { createContext, ReactNode, useContext, useEffect, useState } from 'react'
 
 type UseAuthErrorCode = 'unexpected'
 

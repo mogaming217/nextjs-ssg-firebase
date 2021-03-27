@@ -1,7 +1,7 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
 import 'firebase/analytics'
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/firestore'
 
 const app = (() => {
   if (firebase.apps.length !== 0) {

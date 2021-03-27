@@ -1,6 +1,6 @@
-import React from 'react'
-import { DefaultSeo as DS } from 'next-seo'
 import { publicEnv } from 'env'
+import { DefaultSeo as DS } from 'next-seo'
+import React from 'react'
 
 export const DefaultSeo = () => (
   <DS

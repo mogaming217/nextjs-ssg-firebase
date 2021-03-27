@@ -1,5 +1,4 @@
-import React from 'react'
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 // 参考：https://medium.com/swlh/server-side-rendering-styled-components-with-nextjs-1db1353e915e

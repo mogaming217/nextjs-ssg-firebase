@@ -1,8 +1,7 @@
-import React from 'react'
-import { FC } from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
 import { Const } from 'lib/const'
+import Link from 'next/link'
+import React, { FC } from 'react'
+import styled from 'styled-components'
 import { StyleConst } from 'styles/const'
 
 const _Footer = styled.footer`
