@@ -1,13 +1,12 @@
-import React from 'react'
+import { Footer, Header } from 'components/lv2'
+import { DefaultSeo } from 'components/seo'
+import { AuthProvider } from 'hooks/useAuth'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { GlobalStyle } from 'styles/global'
-import { AuthProvider } from 'hooks/useAuth'
+import React from 'react'
 import styled from 'styled-components'
 import { StyleConst } from 'styles/const'
-import NProgress from 'nextjs-progressbar'
-import { Header, Footer } from 'components/lv2'
-import { DefaultSeo } from 'components/seo'
+import { GlobalStyle } from 'styles/global'
 
 const AppContainer = styled.div`
   position: relative;
@@ -28,8 +27,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <DefaultSeo />
 
       <Header />
-
-      <NProgress color={StyleConst.COLOR.PRIMARY} height="1" options={{ showSpinner: false }} />
 
       <GlobalStyle />
 
